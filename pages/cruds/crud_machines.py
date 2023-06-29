@@ -2,7 +2,7 @@ from utils.imports import *
 from ..BasePage import BasePage
 from utils.machine_locators import MachineLocators
 
-class CrudMachines(BasePage):
+class Machines(BasePage):
     
     def __init__(self) -> None:
         super().__init__()

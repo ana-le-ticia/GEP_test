@@ -2,6 +2,7 @@ from BasePage import BasePage
 from utils.imports import *
 
 class Login(BasePage):
+    
     def __init__(self, driver) -> None:
         super().__init__()
         self.browser = driver

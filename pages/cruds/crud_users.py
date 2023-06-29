@@ -8,7 +8,7 @@ class Users(BasePage):
         super().__init__()
         self.locator = UsersLocators()
 
-    def adicionar_user(self, nome: str, email: str, matricula: str, telefone: str, tipo_usuario: str, nivel_acesso: str):
+    def adicionar_user(self, nome: str, email: str, matricula: str, telefone: str, tipo_usuario: str):
         
         self.wait_to_click(self.locator.USERS_PATH)
         self.click_element(self.locator.USERS_PATH)
@@ -26,10 +26,10 @@ class Users(BasePage):
         self.write(self.locator.PHONE_INPUT_PATH, telefone)
 
         self.wait(self.locator.USER_TYPE_INPUT_PATH)
-        self.write(self.locator.USER_TYPE_INPUT_PATH, user)
+        self.write(self.locator.USER_TYPE_INPUT_PATH, tipo_usuario)
 
         self.wait_to_click(self.locator.ACCESS_LEVEL_BTN_PATH)
         self.click_element(self.locator.ACCESS_LEVEL_BTN_PATH)
 
-        self.wait_to_click(self.locator.ACCESS_LEVEL_BTN_PATH)
-        self.click_element(self.locator.ACCESS_LEVEL_BTN_PATH)
+        self.wait_to_click(self.locator.SELECT_LEVEL_BOX_PATH)
+        self.click_element(self.locator.SELECT_LEVEL_BOX_PATH)

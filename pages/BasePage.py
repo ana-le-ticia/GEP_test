@@ -4,9 +4,6 @@ class BasePage():
     
     def init(self, driver) -> None:
         self.browser = driver
-        
-    def init(self, driver) -> None:
-        self.browser = driver
 
     def locate_element(self, locator):
         return self.browser.find_element(*locator)

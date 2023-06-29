@@ -13773,3 +13773,5 @@ JavaScript warning: https://accounts.google.com/v3/signin/identifier?dsh=S124160
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
 1687975067726	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
 console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1687977229817	Marionette	INFO	Stopped listening on port 38311
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
